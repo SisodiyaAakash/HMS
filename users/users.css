@@ -1,0 +1,505 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #3B76EF;
+}
+
+.mt {
+  margin-top: 1rem !important;
+}
+
+.mt-5 {
+  margin-top: 5rem;
+}
+
+@-webkit-keyframes fade-in-down {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-90px);
+            transform: translateY(-90px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-down {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-90px);
+            transform: translateY(-90px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes fade-in-right {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-90px);
+            transform: translateX(-90px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-90px);
+            transform: translateX(-90px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.fade-in-down {
+  -webkit-animation-name: fade-in-down;
+          animation-name: fade-in-down;
+}
+
+.fade-in-right {
+  -webkit-animation-name: fade-in-right;
+          animation-name: fade-in-right;
+}
+
+.heading {
+  margin: 0 1rem;
+  font-size: calc(20px + 0.4vw);
+  line-height: calc(2.7rem + 3vw);
+  text-align: center;
+}
+
+.title {
+  margin: 12px auto;
+  font-size: calc(1rem + 1.2vw);
+  line-height: calc(1.15rem + 4vw);
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .desktop-hide {
+    display: none;
+  }
+}
+
+header.side-nav {
+  position: fixed;
+  width: 15%;
+  top: 0%;
+  left: 0%;
+  height: 100vh;
+  background-color: #3B76EF;
+}
+
+header.side-nav .safearea {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+header.side-nav .safearea .side-menus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header.side-nav .safearea .side-menus .menu-itm {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header.side-nav .safearea .side-menus .logo svg {
+  width: 40px;
+  height: 37px;
+}
+
+header.side-nav .safearea .side-menus .menu-list {
+  margin-top: 3rem;
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header.side-nav .safearea .side-menus .menu-list .sm-itm {
+  margin: 8px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header.side-nav .safearea .side-menus .menu-list .sm-itm svg {
+  height: 20px;
+  width: auto;
+  fill: #d4d4d4;
+}
+
+@media screen and (max-width: 1200px) {
+  header.side-nav .safearea .side-menus .menu-list .sm-itm svg {
+    height: 35px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+header.side-nav .safearea .side-menus .menu-list .sm-itm .itm-name {
+  color: #d4d4d4;
+  font-size: calc(14px +0.4vw);
+  font-weight: 500;
+  margin-left: 0.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  header.side-nav .safearea .side-menus .menu-list .sm-itm .itm-name {
+    display: none;
+  }
+}
+
+header.side-nav .safearea .side-menus .menu-list .sm-itm.active svg {
+  fill: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  header.side-nav .safearea .side-menus .menu-list .sm-itm.active svg {
+    fill: #FFB051;
+  }
+}
+
+header.side-nav .safearea .side-menus .menu-list .sm-itm.active .itm-name {
+  color: #fff;
+}
+
+table {
+  margin: 2rem 0;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+  font-size: calc(12px + 0.2vw);
+}
+
+@media (max-width: 768px) {
+  table {
+    display: none;
+  }
+}
+
+th {
+  background: #f5f5f5;
+  display: none;
+}
+
+td textarea {
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: calc(12px + 0.2vw);
+  text-align: center;
+}
+
+td textarea ::-webkit-input-placeholder {
+  font-size: calc(12px + 0.2vw);
+}
+
+td textarea :-ms-input-placeholder {
+  font-size: calc(12px + 0.2vw);
+}
+
+td textarea ::-ms-input-placeholder {
+  font-size: calc(12px + 0.2vw);
+}
+
+td textarea ::placeholder {
+  font-size: calc(12px + 0.2vw);
+}
+
+td,
+th {
+  height: 53px;
+}
+
+td.hide,
+th.hide {
+  background-color: transparent;
+  border: none;
+}
+
+td.center,
+th.center {
+  text-align: center;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 10px;
+  empty-cells: show;
+}
+
+td,
+th {
+  text-align: left;
+}
+
+td + td,
+th + th {
+  text-align: center;
+  display: none;
+}
+
+@media (min-width: 640px) {
+  td,
+  th {
+    display: table-cell !important;
+  }
+  td,
+  th {
+    width: 330px;
+  }
+  td + td,
+  th + th {
+    width: auto;
+  }
+}
+
+form {
+  width: 50%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #222E54;
+  border-radius: 16px;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  form {
+    padding: 0;
+    width: 100%;
+    border-radius: 8px;
+  }
+}
+
+form .heading {
+  font-size: calc(20px + 0.4vw);
+}
+
+form input, form select {
+  height: 25px;
+}
+
+form textarea {
+  min-height: 25px;
+}
+
+form input[type="submit"], form button[type="submit"] {
+  font-size: calc(10px + 0.4vw);
+  outline: none;
+  height: 30px;
+  width: calc(12rem + 0.2vw);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: calc(1rem + 0.4vw);
+  margin-bottom: calc(1rem + 0.4vw);
+  background-color: #FFB051;
+  border: 1px solid #FFB051;
+  border-radius: 5px;
+  color: white;
+}
+
+form input[type="submit"]:hover, form button[type="submit"]:hover {
+  background-color: transparent;
+  color: #FFB051;
+}
+
+@media screen and (max-width: 768px) {
+  form input[type="submit"], form button[type="submit"] {
+    font-size: calc(14px + 0.4vw);
+  }
+}
+
+form label {
+  text-align: center;
+  font-size: calc(12px + 0.4vw);
+  margin-bottom: calc(4px + 0.2vw);
+}
+
+@media screen and (max-width: 768px) {
+  form label {
+    font-size: calc(16px + 0.4vw);
+  }
+}
+
+form .label {
+  text-align: center;
+  font-size: calc(8px + 0.4vw);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  form .label {
+    font-size: calc(12px + 0.3vw);
+  }
+}
+
+form select {
+  text-align: center;
+  text-align-last: center;
+  width: calc(25rem + 0.7vw);
+}
+
+@media screen and (max-width: 1200px) {
+  form select {
+    width: 91%;
+  }
+}
+
+form input[type="date"], form input[type="time"] {
+  width: calc(25rem + 0.3vw);
+}
+
+@media screen and (max-width: 1200px) {
+  form input[type="date"], form input[type="time"] {
+    width: 91%;
+  }
+}
+
+form input, form textarea {
+  width: calc(25rem + 0.2vw);
+}
+
+@media screen and (max-width: 1200px) {
+  form input, form textarea {
+    width: 90%;
+  }
+}
+
+form input, form textarea, form select {
+  font-size: calc(10px + 0.4vw);
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: calc(4px + 0.2vw);
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #222E54;
+  color: #222E54;
+  text-align: center;
+}
+
+form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder, form select::-webkit-input-placeholder {
+  font-size: calc(10px + 0.4vw);
+  color: #222E54;
+  text-align: center;
+}
+
+form input:-ms-input-placeholder, form textarea:-ms-input-placeholder, form select:-ms-input-placeholder {
+  font-size: calc(10px + 0.4vw);
+  color: #222E54;
+  text-align: center;
+}
+
+form input::-ms-input-placeholder, form textarea::-ms-input-placeholder, form select::-ms-input-placeholder {
+  font-size: calc(10px + 0.4vw);
+  color: #222E54;
+  text-align: center;
+}
+
+form input::placeholder, form textarea::placeholder, form select::placeholder {
+  font-size: calc(10px + 0.4vw);
+  color: #222E54;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder, form select::-webkit-input-placeholder {
+    font-size: calc(14px + 0.4vw);
+  }
+  form input:-ms-input-placeholder, form textarea:-ms-input-placeholder, form select:-ms-input-placeholder {
+    font-size: calc(14px + 0.4vw);
+  }
+  form input::-ms-input-placeholder, form textarea::-ms-input-placeholder, form select::-ms-input-placeholder {
+    font-size: calc(14px + 0.4vw);
+  }
+  form input::placeholder, form textarea::placeholder, form select::placeholder {
+    font-size: calc(14px + 0.4vw);
+  }
+}
+
+form .redirect {
+  text-align: center;
+}
+
+form .redirect a {
+  color: #3B76EF;
+}
+
+.pagearea {
+  margin-left: auto;
+  width: 85%;
+  padding: 1.5rem 0;
+}
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 85%;
+    padding: 1rem 0;
+  }
+}
+/*# sourceMappingURL=users.css.map */
